@@ -67,6 +67,81 @@ I really liked how **Spot Instances** are super cheap, but can be stopped anytim
 
 ---
 
-Thanks for reading! 
+## Day 2 – AWS Billing & Cost Tools
+
+# ☁️ AWS Learning Journey – Day 2
+
+Hey everyone! 👋  
+Today I focused on learning how AWS handles **billing, cost tracking, and account management**. These tools are super important if you're managing multiple AWS services or working in a company with many cloud accounts.
+
+---
+
+## 🛡️ AWS Trusted Advisor
+
+This tool is like your **AWS account assistant** — it reviews your setup and gives suggestions to:
+- 💰 Save money
+- 🔐 Improve security
+- 🚀 Boost performance
+- 💣 Add fault tolerance
+- 📈 Monitor service limits
+
+🔍 Example: It might tell you “Hey, this EC2 instance is not being used — consider stopping it to save cost.”
+
+> 📌 You get 7 basic checks for free. More checks if you're on Business/Enterprise support.
+
+---
+
+## 🧾 Consolidated Billing (via AWS Organizations)
+
+This lets you link **multiple AWS accounts** under one **main payer account**.
+
+### ✅ Why It’s Useful:
+- 🧾 One bill for all linked accounts
+- 🔍 Easy to track usage per team/project
+- 💸 Combine usage across accounts to get **volume discounts**
+- 🔒 Each account stays separate and secure
+
+---
+
+## 💸 Volume Discounts with Consolidated Billing
+
+If Account A uses 20 TB of S3, and Account B uses 30 TB,  
+➡️ Combined = 50 TB = Qualifies for cheaper storage pricing!
+
+You save **more** because AWS sees your **total usage** across accounts.
+
+> 🧠 Without consolidated billing, each account would miss out on the discount.
+
+---
+
+## 📊 AWS Cost Explorer
+
+This is your **cloud spending dashboard** — super helpful.
+
+### What You Can Do:
+- View spending per day/month/service/account
+- Filter by tags, regions, services
+- Forecast future costs
+- Compare usage over time
+- Spot unexpected increases (like “Oops! I forgot to stop that instance 😅”)
+
+> 🔍 This tool helps you stay in control of your AWS bill — even as you grow.
+
+---
+
+## ✅ Summary of Today:
+| Tool | What it Helps With |
+|------|---------------------|
+| **Trusted Advisor** | Cost, security, performance tips |
+| **Consolidated Billing** | Link multiple accounts, save money |
+| **Volume Discounts** | Save more when usage is combined |
+| **Cost Explorer** | Visualize, track & control spending |
+
+---
+
+
+Thanks again for reading!  
+Feel free to fork this if you're also learning AWS 😊
 
 — *Thrupthi S.*
+
