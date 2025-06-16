@@ -138,6 +138,69 @@ This is your **cloud spending dashboard** — super helpful.
 | **Cost Explorer** | Visualize, track & control spending |
 
 ---
+# 🌤️ AWS Learning Journey – Day 3 (EC2, Billing, Pricing Models)
+
+Hi! Today was all about **understanding how AWS helps us run virtual servers**, manage costs, and how billing really works behind the scenes.
+
+---
+
+## 🖥️ EC2 – Elastic Compute Cloud
+
+### What is EC2?
+EC2 is like **renting a virtual computer** in the cloud. Instead of buying physical machines, we can instantly launch servers and run applications.
+
+### Why Use EC2?
+- No need to buy or manage hardware
+- Scale up or down instantly
+- Choose your own OS, CPU, RAM, etc.
+
+### What We Need to Launch a Virtual Server:
+1. **Amazon Machine Image (AMI)** – Prebuilt OS and software image
+2. **Instance Type** – Defines CPU, RAM, etc. (like choosing laptop specs)
+3. **Key Pair** – Like a password to log in securely
+4. **Security Group** – Acts like a firewall (defines what traffic is allowed)
+5. **Storage (EBS)** – Hard disk attached to our server
+6. **IAM Role (optional)** – Permissions for server to talk to other AWS services
+7. **Session Manager / SSH** – To access the server
+8. **Tags** – Labels for organizing and billing
+
+---
+
+## 💰 EC2 Pricing Models
+
+AWS gives multiple ways to pay based on how long and how stable your usage is:
+
+| Type               | Description |
+|--------------------|-------------|
+| **On-Demand**      | Pay only when you use it, like a taxi 🚕 |
+| **Reserved Instance** | Commit for 1 or 3 years, big discount 💸 |
+| **Spot Instance**  | Use unused EC2 at huge discounts, but can be stopped anytime 🛑 |
+| **Dedicated Host** | Entire physical server for your company (isolation + compliance) 🏢 |
+
+---
+
+## 📊 AWS Billing and Pricing
+
+### Key Services Learned:
+
+- **AWS Pricing Calculator**: Estimate monthly AWS costs in advance
+- **Consolidated Billing**: Manage multiple AWS accounts under one bill
+- **Cost Explorer**: Visual tool to track and analyze costs
+- **Budgets**: Set alerts when you’re about to cross spending limits
+- **Trusted Advisor**: Gives security, cost, and performance suggestions
+- **TCO Calculator**: Compares cloud vs on-premise costs
+
+---
+
+## ✍️ Summary in My Words:
+
+> "Today I finally understood how cloud servers are launched and managed. It feels powerful knowing I can spin up a full virtual machine, set its firewall, manage costs, and scale it. EC2 is the heart of AWS compute services — and billing is not just numbers, but a tool to control and optimize!"
+
+---
+
+
+
+
 
 
 Thanks again for reading!  
