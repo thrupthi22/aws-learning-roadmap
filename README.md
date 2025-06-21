@@ -192,9 +192,124 @@ AWS gives multiple ways to pay based on how long and how stable your usage is:
 
 ---
 
-## ✍️ Summary in My Words:
+# ☁️ AWS Learning Journey – Day 4: Core Services & Security Concepts
 
-> "Today I finally understood how cloud servers are launched and managed. It feels powerful knowing I can spin up a full virtual machine, set its firewall, manage costs, and scale it. EC2 is the heart of AWS compute services — and billing is not just numbers, but a tool to control and optimize!"
+Today’s focus: Learning AWS foundational services and how to secure and manage cloud resources effectively.
+
+---
+
+## 🧱 1. AWS Core Services
+
+### 🧮 1.1 Computing Services
+- **Amazon EC2** – Virtual servers in the cloud.
+- **Lambda** – Serverless function execution (pay per request).
+- **Elastic Beanstalk** – Platform-as-a-service for auto-deployment.
+- **ECS/EKS** – Run containers at scale (Docker, Kubernetes).
+- **Lightsail** – Easy VPS for simpler use-cases.
+
+### 📦 1.2 Storage Services
+- **S3 (Simple Storage Service)** – Scalable object storage.
+- **EBS (Elastic Block Store)** – Block storage for EC2.
+- **EFS (Elastic File System)** – File system for Linux workloads.
+- **Glacier** – Long-term archival storage (low-cost).
+
+### 🧠 1.3 Database Services
+- **Amazon RDS** – Managed relational databases (MySQL, PostgreSQL).
+- **Amazon DynamoDB** – NoSQL database with low latency.
+- **Amazon Aurora** – High-performance MySQL/PostgreSQL-compatible DB.
+- **Amazon Redshift** – Data warehousing.
+- **Amazon ElastiCache** – In-memory caching (Redis, Memcached).
+
+---
+
+## ⚙️ 2. Provisioning Services
+
+- **CloudFormation** – Infrastructure as Code (IaC).
+- **AWS Marketplace** – Pre-built solutions to deploy quickly.
+- **Elastic Beanstalk** – Auto-deploy web apps without server management.
+- **OpsWorks** – Configuration management using Chef/Puppet.
+- **Service Catalog** – Manage pre-approved stacks for orgs.
+
+---
+
+## 🏢 3. Business-Centric Services
+
+- **AWS WorkSpaces** – Virtual desktops in the cloud.
+- **Amazon Chime** – Online meetings, video conferencing.
+- **Amazon WorkDocs** – Document sharing & collaboration.
+- **AWS Connect** – Cloud-based contact center service.
+
+---
+
+## 🔗 4. Enterprise Integration
+
+- **AWS SSO** – Single sign-on across AWS accounts and apps.
+- **Directory Service** – Connects AWS with Active Directory.
+- **AWS IAM** – Manages users, roles, and permissions.
+- **Resource Access Manager** – Shares resources across accounts.
+- **AWS Organizations** – Manage multi-account setups.
+
+---
+
+## 🪵 5. Logging & Monitoring Services
+
+| Service | Purpose |
+|--------|---------|
+| **CloudTrail** | Logs all API calls in the account |
+| **CloudWatch** | Monitors metrics, logs, and alarms |
+| **AWS Config** | Tracks configuration history |
+| **VPC Flow Logs** | Captures network traffic |
+| **CloudWatch Logs** | Centralizes logs from all AWS services |
+
+---
+
+## 🛡️ 6. AWS Security & Threat Protection
+
+### 🔐 6.1 AWS WAF
+- Protects web apps from common attacks (SQLi, XSS, bots)
+- Works with CloudFront, ALB, API Gateway
+
+### 🛡️ 6.2 AWS Shield
+- Standard (free): Protects from basic DDoS
+- Advanced (paid): 24/7 support, DDoS diagnostics
+
+### 🔎 6.3 Penetration Testing
+- AWS allows testing on EC2, RDS, CloudFront, etc.
+- Must follow [AWS Testing Guidelines](https://aws.amazon.com/security/penetration-testing/)
+
+### 🕵️ 6.4 Amazon GuardDuty
+- Detects threats using ML (malware, unusual behavior, data leaks)
+- No agent required; uses CloudTrail, DNS, VPC logs
+
+---
+
+## 📚 7. Shared Responsibility Model
+
+| Responsibility | AWS | Customer |
+|----------------|-----|----------|
+| Data Center Security | ✅ | ❌ |
+| Hardware & Infra | ✅ | ❌ |
+| IAM, Access Control | ❌ | ✅ |
+| Data Encryption | ❌ | ✅ |
+| OS Patching (on EC2) | ❌ | ✅ |
+
+**🔑 Rule:** *AWS manages the infrastructure. You manage how it's used.*
+
+---
+
+## ✅ Summary
+
+| Area | Services |
+|------|----------|
+| Compute | EC2, Lambda, ECS, EKS |
+| Storage | S3, EBS, EFS, Glacier |
+| Database | RDS, DynamoDB, Aurora |
+| Security | IAM, WAF, Shield, GuardDuty |
+| Monitoring | CloudWatch, CloudTrail |
+| Provisioning | CloudFormation, Elastic Beanstalk |
+| Business | WorkSpaces, WorkDocs, Chime |
+| Integration | Directory Service, SSO |
+| Governance | Shared Responsibility Model, Config |
 
 ---
 
@@ -203,8 +318,9 @@ AWS gives multiple ways to pay based on how long and how stable your usage is:
 
 
 
-Thanks again for reading!  
-Feel free to fork this if you're also learning AWS 😊
 
-— *Thrupthi S.*
+
+
+
+
 
