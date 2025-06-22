@@ -313,6 +313,148 @@ Today’s focus: Learning AWS foundational services and how to secure and manage
 
 ---
 
+# ☁️ AWS Learning Journey – Day 5: Security, Compliance & Cost Optimization
+
+Today’s focus: Exploring how AWS helps secure your data, stay compliant, and manage costs effectively.
+
+---
+
+## 🔐 1. AWS KMS (Key Management Service)
+
+**Purpose:** Manages encryption keys used to protect data in AWS.
+
+### 💡 Key Concepts:
+- Create and control **encryption keys** (CMKs)
+- Use **KMS-integrated encryption** in S3, RDS, EBS, Lambda, etc.
+- Supports **symmetric** (single key) and **asymmetric** (public/private) encryption
+- Logs key usage in CloudTrail
+
+### 🧠 Real Use:
+Encrypt S3 files → Use KMS key → Only your app can decrypt → Logged access
+
+---
+
+## 🕵️ 2. Amazon Macie
+
+**Purpose:** Automatically detects **sensitive data** (PII, credentials) in S3.
+
+### 🔍 Detects:
+- Names, phone numbers, emails
+- Aadhaar/PAN numbers
+- Passwords, API keys
+- Credit card numbers
+
+### ⚙️ What It Does:
+- Scans S3 buckets
+- Classifies sensitive content
+- Sends alerts for exposure or risk
+
+---
+
+## ✅ 3. AWS Compliance Programs
+
+Helps meet industry security & compliance standards.
+
+### 🔒 Supported Frameworks:
+- ISO 27001, 27017, 27018
+- PCI-DSS (payment)
+- HIPAA (health)
+- GDPR (privacy)
+- SOC 1, SOC 2, SOC 3
+
+Use **AWS Artifact** to download compliance reports for audits.
+
+---
+
+## 📚 4. AWS Artifact
+
+**Purpose:** Central hub for **compliance documents**, certifications, and legal agreements.
+
+- Download ISO, PCI, SOC reports
+- View AWS compliance status
+- Accept and manage agreements (GDPR DPA, HIPAA BAA)
+
+---
+
+## 🧾 5. AWS Budgets
+
+**Purpose:** Set custom **cost and usage limits**.
+
+### 🔧 Features:
+- Set a monthly budget (e.g., ₹1,000/month)
+- Track usage by service or linked account
+- Get alerts when near or over limit (email/SNS)
+
+---
+
+## 📊 6. AWS Cost Explorer
+
+**Purpose:** Visualizes AWS **spending trends** over time.
+
+### 💡 Helps You:
+- See cost breakdown by service/account/region
+- Forecast future spending
+- Analyze spikes in bill
+- Use hourly, daily, or monthly filters
+
+---
+
+## 💰 7. TCO Calculator (Total Cost of Ownership)
+
+**Purpose:** Compare AWS cloud costs vs on-premises setup.
+
+- Helps calculate savings by moving to AWS
+- Includes servers, networking, power, maintenance
+- Good for business teams estimating migration ROI
+
+---
+
+## 🏢 8. AWS Organizations
+
+**Purpose:** Manage **multiple AWS accounts** under one umbrella.
+
+### 🔧 Key Features:
+- Create **Organizational Units (OUs)**
+- Apply **Service Control Policies (SCPs)**
+- Enable **Consolidated Billing**
+- Share services (like GuardDuty) across accounts
+
+---
+
+## 🧾 9. Consolidated Billing
+
+- Combine bills from multiple AWS accounts
+- Get **volume discounts**
+- One master account pays for all linked accounts
+- Great for startups, teams, enterprise orgs
+
+---
+
+## 🧾 10. AWS Cost and Usage Reports (CUR)
+
+- Detailed CSV files of all billing info
+- Can be delivered to S3
+- Used for advanced analytics or 3rd-party billing tools
+
+---
+
+## ✅ Summary
+
+| Tool | Purpose |
+|------|---------|
+| **KMS** | Manages encryption keys |
+| **Macie** | Finds sensitive data in S3 |
+| **Artifact** | Compliance documentation hub |
+| **Budgets** | Set alerts on cost & usage |
+| **Cost Explorer** | Visual cost breakdown |
+| **TCO Calculator** | Compares AWS vs on-prem cost |
+| **Organizations** | Multi-account management |
+| **Consolidated Billing** | Unified billing + discounts |
+| **CUR** | Granular billing data export |
+
+---
+
+
 
 
 
